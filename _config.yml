@@ -1,4 +1,10 @@
 title: "DSC 180A"
-name: "Methodology Assignment 5"
+name: "Home"
 theme: minima
 header_pages: []
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      title: ""
