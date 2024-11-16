@@ -1,10 +1,68 @@
-title: "DSC 180A"
-name: "Home"
-theme: minima
-header_pages: []
+# title: "DSC 180A"
+# name: "Home"
+# theme: minima
+# header_pages: []
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       title: ""
+
+# Main Settings
+title: "Your Site Title"              # The site title
+name: "Tab Title"                     # Browser tab title
+author: "Your Name"                   # Default author for the site
+email: your-email@domain.com          # Contact email (shown in footer)
+description: >                        # Site description (used in meta tags)
+  Write your site description here.
+  It can span multiple lines.
+baseurl: ""                           # Subpath of site, e.g. /blog
+url: ""                              # Full hostname & protocol
+lang: en                             # Site language code
+
+# Build Settings
+theme: minima                         # Theme name
+markdown: kramdown                    # Markdown processor
+show_excerpts: false                  # Show post excerpts on home page
+permalink: pretty                     # URL format for posts
+header_pages:                        # Pages to include in header navigation
+  - about.md
+  - portfolio.md
+excerpt_separator: <!--more-->        # Separator for post excerpts
+
+# Minima Theme Specific
+minima:
+  date_format: "%b %-d, %Y"          # Date format
+  skin: classic                      # Theme skin (classic, dark, solarized)
+  social_links:                      # Additional social links
+    telegram: jekyll
+    keybase: jekyll
+    mastodon:
+     - username: jekyll
+       instance: example.com
+    devto: jekyll
+    stackoverflow: "123456"
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X      # Google Analytics tracking ID
+
+# Disqus Comments
+disqus:
+    shortname: your-disqus-shortname  # Disqus shortname for comments
+
+# Collections
+collections:
+  projects:                          # Define custom collection
+    output: true                     # Generate pages for collection items
+    permalink: /:collection/:name    # URL format for collection items
+
+# Defaults (Front Matter defaults)
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
+  -
+    scope:
+      path: ""                       # All files in the project
+      type: "posts"                  # Apply to posts
     values:
-      title: ""
+      layout: "post"                 # Default layout
+      author: "Default Author"       # Default author
