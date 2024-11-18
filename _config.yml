@@ -1,19 +1,10 @@
 # Site settings
 title: Eduardo Spiegel's Research Page
-
-# Author settings
-author:
-  name: Eduardo Spiegel
-  email: espiegel@ucsd.edu
-
 # Theme settings
 theme: minima
-
-# Navigation
-nav_external_links:
-  - title: UCSD
-    url: https://ucsd.edu
-    hide_icon: false
-
-# Footer content
-footer_content: "Mentored by Yusu Wang and Gal Mishne | Section A16"
+# Theme settings
+theme: minima
+theme_settings:
+  header: false
+  footer: true
+  sidebar: false
