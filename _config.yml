@@ -1,10 +1,5 @@
 # Site settings
 title: Eduardo Spiegel's Research Page
-description: >-
-  Research work and projects in Graph Neural Networks, 
-  focusing on Graph Transformers and Neural Collapse phenomena.
-baseurl: "" # If your site is in a subdirectory, put it here
-url: "" # Put your site's URL here
 
 # Author settings
 author:
@@ -12,15 +7,7 @@ author:
   email: espiegel@ucsd.edu
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs
-
-# Just the Docs specific settings
-heading_anchors: true
-color_scheme: light
-search_enabled: true
-aux_links:
-  "Contact":
-    - "mailto:espiegel@ucsd.edu"
+theme: minima
 
 # Navigation
 nav_external_links:
@@ -30,17 +17,3 @@ nav_external_links:
 
 # Footer content
 footer_content: "Mentored by Yusu Wang and Gal Mishne | Section A16"
-
-# Collections (if you want to organize your content)
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
-
-# Exclude files from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md
