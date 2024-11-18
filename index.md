@@ -1,4 +1,12 @@
-# Methodology Assignment 5
+---
+layout: home
+---
+
+## Personal Information
+- **Name**: Eduardo Spiegel
+- **Email**: espiegel@ucsd.edu
+- **Section**: A16
+- **Mentor**: Yusu Wang, Gal Mishne
 
 ## Personal Information
 - **Name**: Eduardo Spiegel

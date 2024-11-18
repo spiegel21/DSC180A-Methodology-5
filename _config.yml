@@ -12,24 +12,10 @@ markdown: kramdown
 # Theme customization
 minima:
   date_format: "%b %-d, %Y"
-  # You can add social links if desired
-  # social_links:
-  #   github: yourusername
-  #   google_scholar: yourprofile
 
 # Header pages
 header_pages:
  - about.md
 
-# Additional metadata
-institution: University of California San Diego
-section: A16
-mentors:
-  - Yusu Wang
-  - Gal Mishne
-
-# Exclude files from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
+# Show excerpts on the home page
+show_excerpts: false
