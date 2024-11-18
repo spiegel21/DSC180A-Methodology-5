@@ -8,12 +8,6 @@ layout: home
 - **Section**: A16
 - **Mentor**: Yusu Wang, Gal Mishne
 
-## Personal Information
-- **Name**: Eduardo Spiegel
-- **Email**: espiegel@ucsd.edu
-- **Section**: A16
-- **Mentor**: Yusu Wang, Gal Mishne
-
 ## Quarter 2 Project Proposal Prompts
 
 **1. What is the most interesting topic covered in your domain this quarter?**

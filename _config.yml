@@ -15,7 +15,10 @@ minima:
 
 # Header pages
 header_pages:
- - about.md
+  - about.md
 
-# Show excerpts on the home page
+# Homepage settings
+home_title: "Home"  # This will override the first heading on the homepage
+page_excerpts: false
 show_excerpts: false
+list_title: null     # This removes the "Posts" heading if you don't have any posts
