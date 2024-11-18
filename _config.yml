@@ -1,10 +1,35 @@
 # Site settings
 title: Eduardo Spiegel's Research Page
-# Theme settings
+description: Research in Graph Neural Networks and Neural Collapse at UCSD
+author:
+  name: Eduardo Spiegel
+  email: espiegel@ucsd.edu
+
+# Build settings
 theme: minima
-# Theme settings
-theme: minima
-theme_settings:
-  header: false
-  footer: true
-  sidebar: false
+markdown: kramdown
+
+# Theme customization
+minima:
+  date_format: "%b %-d, %Y"
+  # You can add social links if desired
+  # social_links:
+  #   github: yourusername
+  #   google_scholar: yourprofile
+
+# Header pages
+header_pages:
+ - about.md
+
+# Additional metadata
+institution: University of California San Diego
+section: A16
+mentors:
+  - Yusu Wang
+  - Gal Mishne
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
