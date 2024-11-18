@@ -1,68 +1,46 @@
-# title: "DSC 180A"
-# name: "Home"
-# theme: minima
-# header_pages: []
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       title: ""
+# Site settings
+title: Eduardo Spiegel's Research Page
+description: >-
+  Research work and projects in Graph Neural Networks, 
+  focusing on Graph Transformers and Neural Collapse phenomena.
+baseurl: "" # If your site is in a subdirectory, put it here
+url: "" # Put your site's URL here
 
-# Main Settings
-title: "Your Site Title"              # The site title
-name: "Tab Title"                     # Browser tab title
-author: "Your Name"                   # Default author for the site
-email: your-email@domain.com          # Contact email (shown in footer)
-description: >                        # Site description (used in meta tags)
-  Write your site description here.
-  It can span multiple lines.
-baseurl: ""                           # Subpath of site, e.g. /blog
-url: ""                              # Full hostname & protocol
-lang: en                             # Site language code
+# Author settings
+author:
+  name: Eduardo Spiegel
+  email: espiegel@ucsd.edu
 
-# Build Settings
-theme: minima                         # Theme name
-markdown: kramdown                    # Markdown processor
-show_excerpts: false                  # Show post excerpts on home page
-permalink: pretty                     # URL format for posts
-header_pages:                        # Pages to include in header navigation
-  - about.md
-  - portfolio.md
-excerpt_separator: <!--more-->        # Separator for post excerpts
+# Theme settings
+remote_theme: just-the-docs/just-the-docs
 
-# Minima Theme Specific
-minima:
-  date_format: "%b %-d, %Y"          # Date format
-  skin: classic                      # Theme skin (classic, dark, solarized)
-  social_links:                      # Additional social links
-    telegram: jekyll
-    keybase: jekyll
-    mastodon:
-     - username: jekyll
-       instance: example.com
-    devto: jekyll
-    stackoverflow: "123456"
+# Just the Docs specific settings
+heading_anchors: true
+color_scheme: light
+search_enabled: true
+aux_links:
+  "Contact":
+    - "mailto:espiegel@ucsd.edu"
 
-# Google Analytics
-google_analytics: UA-XXXXXXXX-X      # Google Analytics tracking ID
+# Navigation
+nav_external_links:
+  - title: UCSD
+    url: https://ucsd.edu
+    hide_icon: false
 
-# Disqus Comments
-disqus:
-    shortname: your-disqus-shortname  # Disqus shortname for comments
+# Footer content
+footer_content: "Mentored by Yusu Wang and Gal Mishne | Section A16"
 
-# Collections
+# Collections (if you want to organize your content)
 collections:
-  projects:                          # Define custom collection
-    output: true                     # Generate pages for collection items
-    permalink: /:collection/:name    # URL format for collection items
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
-# Defaults (Front Matter defaults)
-defaults:
-  -
-    scope:
-      path: ""                       # All files in the project
-      type: "posts"                  # Apply to posts
-    values:
-      layout: "post"                 # Default layout
-      author: "Default Author"       # Default author
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
